@@ -1,0 +1,104 @@
+:root {
+	--main-bg-color: #00a19d;
+	--container-bg-color: #ffb344;
+	--border-color: #fff8e5;
+	--weapon-bg-color: #e05d5d;
+	--text-color: #141414;
+	--weapon-border-color: #fff8e5;
+}
+
+@font-face {
+	font-family: myFont;
+	src: url(../fonts/Caveat-VariableFont_wght.ttf);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--text-color);
+	font-family: myFont;
+}
+
+body {
+	background-color: var(--main-bg-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.weapon {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--weapon-bg-color);
+	border: 2px solid #141414;
+	cursor: pointer;
+	box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.3);
+	transition: ease-in 0.3s;
+	font-size: 4.5rem;
+}
+
+.weapon:hover {
+	background-color: var(--weapon-border-color);
+	transform: scale(1.1);
+}
+
+.choice {
+	font-size: 2rem;
+	height: 50px;
+	text-align: center;
+}
+
+#win-text {
+	background-color: greenyellow;
+	padding: 0.5rem;
+	color: green;
+	border-radius: 5px;
+}
+
+#lose-text {
+	background-color: #ff9471;
+	padding: 0.5rem;
+	color: maroon;
+	border-radius: 5px;
+}
+
+#draw-text {
+	background-color: #8a8884;
+	padding: 0.5rem;
+	color: #f9f9f9;
+	border-radius: 5px;
+}
+
+#result {
+	text-align: center;
+	width: 150px;
+	font-weight: bold;
+}
+#scores {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2rem;
+	padding: 1.5rem;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+#container {
+	background-color: var(--container-bg-color);
+	width: 50%;
+	min-width: 500px;
+	height: 500px;
+	border-radius: 25px;
+	border: 2px solid var(--border-color);
+	box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#weapons {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 3rem;
+	padding: 2rem;
+}
